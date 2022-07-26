@@ -10,7 +10,7 @@
 .wallpaper > img{
     position: absolute;
     object-position: center;
-    filter: brightness(70%);
+    filter: brightness(60%);
     width: 100%;
   height: auto;
     top: 50%;
