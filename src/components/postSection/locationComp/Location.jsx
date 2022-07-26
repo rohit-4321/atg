@@ -4,8 +4,11 @@ import style from "./location.module.css";
 import { MdModeEdit } from "react-icons/md";
 import { BiErrorCircle } from "react-icons/bi";
 import Recommended from "./Recommended";
+import { UserContext } from "../../provider/UserAuthProvider";
 
 function Location() {
+  const context = React.useContext(UserContext);
+
   return (
     <div className={style.container}>
       <div className={style.location}>
@@ -20,7 +23,7 @@ function Location() {
           experience.
         </p>
       </div>
-      <Recommended />
+      {context.islogedIn && <Recommended />}
     </div>
   );
 }

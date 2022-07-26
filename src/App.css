@@ -6,6 +6,9 @@ p{
     margin: 0%;
 }
 
+.App{
+    position: relative;
+}
 /* .stickyheader{
     position: -webkit-sticky;
   position: sticky;

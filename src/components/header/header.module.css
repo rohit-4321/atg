@@ -7,10 +7,11 @@
 .accText > span{
     color : rgb(33, 59, 161);
     font-weight: 600;
-
+    cursor: pointer;
 }
 .accText{
     margin: 0;
+    cursor: pointer;
 }
 
 .searchContainer{

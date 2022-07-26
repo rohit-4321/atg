@@ -7,8 +7,7 @@ import { UserContext } from "../provider/UserAuthProvider";
 
 function Header() {
   const context = React.useContext(UserContext);
-  console.log(context.islogedIn);
-  console.log(useContext.islogedIn);
+
   return (
     <div className="d-none d-lg-block d-xl-block">
       <div className={`d-flex justify-content-between  ${style.container}`}>
@@ -21,10 +20,18 @@ function Header() {
         </div>
         <SearchBar />
         <div className="d-flex align-items-center justify-content-center">
-          {/* <p className={style.accText}>
-            Create account. <span>It's free</span>
-          </p> */}
-          <Profile />
+          {!context.islogedIn ? (
+            <p
+              className={style.accText}
+              onClick={() => {
+                context.setLogin(true);
+              }}
+            >
+              Create account. <span>It's free</span>
+            </p>
+          ) : (
+            <Profile />
+          )}
         </div>
       </div>
     </div>
