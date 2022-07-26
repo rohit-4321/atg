@@ -17,7 +17,9 @@ function Recommended() {
       <Recommendation profileUrl={"./g3.png"} name={"MBA"} />
       <Recommendation profileUrl={"./g4.png"} name={"Philosophy"} />
       <div className="d-flex justify-content-end">
-        <a className={style.seeMore}>See more..</a>
+        <p className={style.seeMore} href="#">
+          See more..
+        </p>
       </div>
     </div>
   );

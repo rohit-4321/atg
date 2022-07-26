@@ -1,11 +1,11 @@
-import React, { useContext } from "react";
+import React from "react";
 import logo from "./whole.png";
 import style from "./header.module.css";
 import { AiOutlineSearch } from "react-icons/ai";
 import { Profile } from "./loginprofile/Profile";
 import { UserContext } from "../provider/UserAuthProvider";
 
-function Header() {
+function Header({ setPopUpState }) {
   const context = React.useContext(UserContext);
 
   return (
@@ -24,7 +24,7 @@ function Header() {
             <p
               className={style.accText}
               onClick={() => {
-                context.setLogin(true);
+                setPopUpState(true);
               }}
             >
               Create account. <span>It's free</span>

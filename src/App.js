@@ -1,4 +1,5 @@
 import "bootstrap/dist/css/bootstrap.css";
+import { useState } from "react";
 import "./App.css";
 import Header from "./components/header/Header";
 import Wallpaper from "./components/middle/Wallpaper";
@@ -7,11 +8,12 @@ import { UserAuthProvider } from "./components/provider/UserAuthProvider";
 import SignInPopUp from "./components/sign/SignInPopUp";
 
 function App() {
+  const [popUpOpen, setPopUpState] = useState(false);
   return (
     <div className="App">
       <UserAuthProvider>
-        <SignInPopUp />
-        <Header />
+        {popUpOpen && <SignInPopUp setPopUpState={setPopUpState} />}
+        <Header setPopUpState={setPopUpState} />
         <Wallpaper />
         <PostSection />
       </UserAuthProvider>
