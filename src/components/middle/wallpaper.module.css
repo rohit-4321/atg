@@ -1,0 +1,44 @@
+.wallpaper{
+    width: 100%;
+    position: relative;
+    height: 23vw;
+    overflow: hidden;
+    min-height: 15rem;
+    
+}
+
+.wallpaper > img{
+    position: absolute;
+    object-position: center;
+    filter: brightness(70%);
+    width: 100%;
+  height: auto;
+    top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.wallpaperText{
+    position: absolute;
+    z-index: 100;
+    margin-left: 10vw;
+    bottom: 10%;
+}
+.header{
+  position: absolute;
+  z-index: 200;
+  margin-left: 5rem;
+  bottom: 10%;
+
+}
+.wallpaperText > h1 , .wallpaperText > p{
+    color: white;
+
+}
+@media only screen and (max-width: 992px) {
+    .wallpaperText{
+        position: absolute;
+        z-index: 100;
+        margin-left: 1rem;
+        bottom: 10%;
+    }
+  }

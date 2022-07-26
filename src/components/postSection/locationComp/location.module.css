@@ -1,0 +1,31 @@
+.container{
+    margin-top: 2rem;
+
+}
+.location{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #B8B8B8;
+    padding-bottom: 1rem;
+    
+}
+.location > p{
+    margin-left: 1rem;
+}
+.location :nth-child(3){
+    margin-left: auto;
+}
+.locationDescription{
+    display: flex;
+    margin-top: 1rem;
+}
+.locationDescription :first-child{
+    width: 30px;
+    height: 30px;    
+}
+.locationDescription > p{
+    margin-left: 5px;
+    font-size: 0.9rem;
+    color: rgb(151, 151, 151);
+
+}

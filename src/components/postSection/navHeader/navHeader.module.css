@@ -1,0 +1,85 @@
+
+.navContainer{
+    position: relative;
+
+    width:100%;
+    display: flex;
+    align-items: stretch;
+   
+    border-bottom: 1px solid #E0E0E0;
+}
+.navContainer > div{
+    display: flex;
+    align-items: center;
+    position: relative;
+    box-shadow: none;
+   
+    margin-right: 1rem ;
+    
+    
+}
+.navContainer  p{
+    color: gray;
+    font-weight: 500;
+}
+.navContainer :first-child > p  {
+    color:black
+
+}
+.navContainer > div:first-child::after{
+content: "";
+position: absolute;
+height : 1px;
+background-color: black;
+left: 0%;
+right: 0%;
+bottom: -1%; 
+}
+
+.navContainer > button {
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+
+}
+.navContainer > button > :first-child{
+    margin-right: 10px;
+}
+
+
+.postbutton{
+    margin-left: auto;
+    background-color: #EDEEF0;
+    border-radius: 2px;
+    border: none;
+    font-weight: 500;
+
+
+    
+}
+.joinButton{
+    color: white;
+    font-weight: 500;
+    border: none;
+    border-radius: 2px;
+    background-color: #2F6CE5;
+    margin-left: 2rem;
+}
+.mobileNavBar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.mobileNavBar > button{
+    border: none;
+    color: black;
+    padding: 0.5rem 1rem;
+    background-color: #F1F3F5;
+    font-size: medium;
+    font-weight: 500;
+}
+.mobileNavBar > p {
+    font-weight: 500;font-size: medium;
+   
+
+}

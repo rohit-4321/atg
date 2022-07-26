@@ -1,0 +1,121 @@
+.singlePost{
+    width: 100%;
+    margin-top: 1rem;
+    border-radius: 5px;
+    border: 1px solid #E0E0E0;
+    padding-bottom: 1rem;
+}
+.postContent{
+    width: 95%;
+    margin: 0 auto;
+}
+.img{
+    width: 100%;
+}
+.topic{
+    margin-top: 1rem;
+}
+.headingContent{
+    margin-top: 1rem;
+
+    display: flex;
+}
+.headingContent > p{
+    flex-grow: 1;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+.headingContent > img{
+    width: 35px;
+    margin-left: 1.9rem;
+    height: 35px;
+}
+.discription{
+    margin-top: 1rem;
+
+    font-size: 1.05rem;
+    color: rgb(158, 158, 158);
+
+}
+.profileContainer{
+    display: flex;
+    margin-top: 1rem;
+
+    align-items: center;
+}
+.profileContainer :nth-child(3){
+    margin-left : auto;
+}
+.profileContainer > img{
+    width: 40px;
+    height: 40px;
+    margin-right: 1rem;
+
+}
+.name{
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: black;
+}
+.views{
+    color: rgb(158, 158, 158);
+    margin-left: 0.5rem;
+}
+.share{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    border: none;
+    margin-left: 2rem;
+    border-radius: 2px;
+    background-color : #EDEEF0 ;
+}
+
+@media only screen and (max-width: 768px) {
+    .singlePost{
+
+    width: 100%;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 0;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    padding-bottom: 1rem;
+    }
+  }
+
+
+
+.postLocationSection{
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+.postLocationSection :nth-child(3){
+    margin-left: 3rem;
+
+}
+.postLocationSection >span{
+    color: #000000;
+    font-weight: 500;
+    margin-left: 5px;
+}
+.adButton{
+    width: 100%;
+    border: 1px solid #A9AEB8;
+    color: orange;
+    background-color: white;
+    border-radius: 6px;
+    margin-top: 1rem;
+    padding: 0.5rem 0;
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 768px) {
+    .postLocationSection :nth-child(3){
+        margin-left: 1rem;
+    }
+    
+  }
